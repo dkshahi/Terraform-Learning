@@ -31,3 +31,25 @@ variable subnet_names {
     subnet3 = "subnetthree"
   }
 }*/
+
+// Output variables
+output "first_output" {
+  value = "this is the value through execution"
+}
+output "aws_cidr_subnet1" {
+  value = aws_subnet.subnet1.cidr_block
+}
+
+/*// Input variables to be input at terraform apply (string data type only)
+variable new_value {
+}
+
+// map type variables to be input at terraform apply (must have -var 'newmap={ subnet1="test1", subnet2="test2"}'
+variable newmap {
+  type = map(string)
+}*/
+// list type variables to be input at terraform apply (must have -var 'newlist={ subnet1="test1", subnet2="test2"}'
+// neet to look into this more as it fails at apply
+// variable newlist {
+//   type = list(string)
+// }
