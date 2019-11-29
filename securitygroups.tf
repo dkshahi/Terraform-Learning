@@ -6,7 +6,7 @@ resource "aws_security_group" "subnetsecurity" {
       aws_vpc.environment-example-two.cidr_block
     ]
     from_port = 80
-    protocol = "tcp"
-    to_port = 80
+    protocol  = "tcp"
+    to_port   = 80
   }
 }
