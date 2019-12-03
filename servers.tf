@@ -20,12 +20,11 @@ resource "aws_instance" "tf_aws_vm_01" {
     Name = "aws_tf_vm_01"
   }
 }
-resource "aws_s3_bucket" "b" {
-  bucket = "ml-tf-test-bucket"
-  acl    = "private"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
+#resource "aws_s3_bucket" "b" {
+#  bucket = "ml-tf-test-bucket"
+#  acl    = "private"
+#  tags = {
+#    Name        = "My bucket"
+#    Environment = "Dev"
+#  }
 }
